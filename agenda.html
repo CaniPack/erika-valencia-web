@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#0d1a10",
+              "on-primary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed": "#0b2013",
+              "secondary": "#7c5730",
+              "secondary-fixed-dim": "#eebd8e",
+              "surface": "#fcf9f3",
+              "surface-container-high": "#ebe8e2",
+              "error-container": "#ffdad6",
+              "on-background": "#1c1c18",
+              "surface-variant": "#e5e2dc",
+              "on-secondary-fixed": "#2c1600",
+              "on-primary-container": "#819986",
+              "inverse-on-surface": "#f3f0ea",
+              "on-surface-variant": "#434843",
+              "outline-variant": "#c3c8c1",
+              "inverse-primary": "#b4cdb8",
+              "on-tertiary-container": "#889787",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed-variant": "#3c4a3d",
+              "secondary-fixed": "#ffdcbd",
+              "surface-container": "#f0eee8",
+              "surface-dim": "#dcdad4",
+              "primary-container": "#1b3022",
+              "on-secondary-container": "#79542d",
+              "surface-tint": "#4d6453",
+              "on-secondary-fixed-variant": "#61401b",
+              "primary-fixed-dim": "#b4cdb8",
+              "on-secondary": "#ffffff",
+              "on-error-container": "#93000a",
+              "inverse-surface": "#31312d",
+              "primary": "#061b0e",
+              "background": "#fcf9f3",
+              "tertiary-container": "#222f23",
+              "tertiary-fixed": "#d7e7d5",
+              "on-surface": "#1c1c18",
+              "on-error": "#ffffff",
+              "surface-bright": "#fcf9f3",
+              "primary-fixed": "#d0e9d4",
+              "tertiary-fixed-dim": "#bbcbba",
+              "on-tertiary-fixed": "#121e14",
+              "surface-container-highest": "#e5e2dc",
+              "surface-container-low": "#f6f3ed",
+              "error": "#ba1a1a",
+              "secondary-container": "#fdcb9b",
+              "outline": "#737973",
+              "on-primary-fixed-variant": "#364c3c"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"],
+              "newsreader": ["Newsreader", "serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body { background-color: #fcf9f3; }
+        .font-newsreader { font-family: 'Newsreader', serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body text-on-surface antialiased">
+<header class="bg-[#fcf9f3]/80 dark:bg-[#061b0e]/80 backdrop-blur-xl fixed top-0 w-full z-50 shadow-[0_20px_40px_rgba(28,28,24,0.05)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-full mx-auto gap-4 flex-wrap">
+<div class="flex items-center gap-4 min-w-0">
+<span class="material-symbols-outlined text-[#1b3022] dark:text-[#d0e9d4] shrink-0 md:hidden" role="button" aria-label="Menú">menu</span>
+<a href="index.html" class="font-newsreader font-bold text-[#1b3022] dark:text-[#fcf9f3] tracking-widest uppercase truncate hover:opacity-80">ERIKA VALENCIA RIVAS</a>
+</div>
+<div class="hidden md:flex gap-6 lg:gap-8 items-center flex-wrap">
+<a class="font-newsreader text-lg uppercase tracking-widest text-[#1b3022] dark:text-[#ebe8e2] opacity-70 hover:text-[#7c5730] transition-colors duration-300" href="index.html">Inicio</a>
+<a class="font-newsreader text-lg uppercase tracking-widest text-[#1b3022] dark:text-[#ebe8e2] opacity-70 hover:text-[#7c5730] transition-colors duration-300" href="programa.html">Estrategia Ejecutiva</a>
+<a class="font-newsreader text-lg uppercase tracking-widest text-[#7c5730] font-semibold" href="agenda.html">Agendar</a>
+<a class="font-newsreader text-lg uppercase tracking-widest text-[#1b3022] dark:text-[#ebe8e2] opacity-70 hover:text-[#7c5730] transition-colors duration-300" href="sobre.html">Sobre Erika</a>
+<a class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-label text-[0.75rem] uppercase tracking-[0.1em] active:scale-95 transition-transform text-center" href="agenda.html">Reservar llamada</a>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-20">
+<section class="max-w-7xl mx-auto px-8 mb-20">
+<div class="max-w-3xl">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-secondary mb-4 block">Confirmación de sesión</span>
+<h1 class="font-headline text-5xl md:text-6xl text-primary leading-tight tracking-[-0.02em] mb-6">
+                    ¡Paso completado! Solo falta un último detalle.
+                </h1>
+<p class="font-headline italic text-2xl text-on-surface-variant opacity-80">
+                    Reserva de una sesión de claridad de 15 minutos.
+                </p>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest p-8 md:p-12 shadow-[0_20px_40px_rgba(28,28,24,0.03)] border-l-4 border-secondary">
+<div class="flex items-center justify-between mb-10 flex-wrap gap-4">
+<h2 class="font-headline text-2xl text-primary">Selecciona tu horario</h2>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span class="font-label text-xs uppercase tracking-widest">15 minutos</span>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-2 mb-10">
+<div class="text-center font-label text-[10px] text-outline tracking-widest py-2 uppercase">Lun</div>
+<div class="text-center font-label text-[10px] text-outline tracking-widest py-2 uppercase">Mar</div>
+<div class="text-center font-label text-[10px] text-outline tracking-widest py-2 uppercase">Mié</div>
+<div class="text-center font-label text-[10px] text-outline tracking-widest py-2 uppercase">Jue</div>
+<div class="text-center font-label text-[10px] text-outline tracking-widest py-2 uppercase">Vie</div>
+<div class="text-center font-label text-[10px] text-outline tracking-widest py-2 uppercase">Sáb</div>
+<div class="text-center font-label text-[10px] text-outline tracking-widest py-2 uppercase">Dom</div>
+<div class="aspect-square flex items-center justify-center text-sm opacity-20">28</div>
+<div class="aspect-square flex items-center justify-center text-sm opacity-20">29</div>
+<div class="aspect-square flex items-center justify-center text-sm opacity-20">30</div>
+<button type="button" class="aspect-square flex items-center justify-center text-sm hover:bg-surface-container-high transition-colors rounded-sm">1</button>
+<button type="button" class="aspect-square flex items-center justify-center text-sm bg-secondary text-white font-bold rounded-sm">2</button>
+<button type="button" class="aspect-square flex items-center justify-center text-sm hover:bg-surface-container-high transition-colors rounded-sm">3</button>
+<div class="aspect-square flex items-center justify-center text-sm opacity-20">4</div>
+</div>
+<div class="space-y-4">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<button type="button" class="py-4 border border-outline-variant/20 font-label text-sm tracking-widest hover:border-secondary transition-colors uppercase rounded-sm">09:00</button>
+<button type="button" class="py-4 border border-secondary bg-secondary text-white font-label text-sm tracking-widest uppercase rounded-sm">10:30</button>
+<button type="button" class="py-4 border border-outline-variant/20 font-label text-sm tracking-widest hover:border-secondary transition-colors uppercase rounded-sm">11:15</button>
+<button type="button" class="py-4 border border-outline-variant/20 font-label text-sm tracking-widest hover:border-secondary transition-colors uppercase rounded-sm">14:00</button>
+<button type="button" class="py-4 border border-outline-variant/20 font-label text-sm tracking-widest hover:border-secondary transition-colors uppercase rounded-sm">15:45</button>
+<button type="button" class="py-4 border border-outline-variant/20 font-label text-sm tracking-widest hover:border-secondary transition-colors uppercase rounded-sm">17:00</button>
+</div>
+</div>
+<div class="mt-12">
+<button type="button" class="w-full bg-primary-container text-on-primary py-5 font-label text-xs uppercase tracking-[0.2em] hover:bg-primary transition-colors rounded-sm">
+                            Confirmar horario seleccionado
+                        </button>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-12">
+<div class="bg-primary-container p-10 text-on-primary">
+<h3 class="font-headline text-2xl mb-6">Tu hoja de ruta personalizada</h3>
+<p class="font-body text-sm text-on-primary-container leading-relaxed mb-8">
+                        En esta llamada definiremos tu hoja de ruta personalizada. No es una charla genérica; es el inicio de tu transformación estratégica.
+                    </p>
+<div class="space-y-6 relative">
+<div class="absolute left-3 top-0 bottom-0 w-[1px] bg-secondary opacity-30"></div>
+<div class="flex gap-6 items-start relative z-10">
+<div class="w-6 h-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-[10px] text-white" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest text-secondary mb-1">Fase 1</h4>
+<p class="text-sm font-headline italic">Auditoría de liderazgo actual</p>
+</div>
+</div>
+<div class="flex gap-6 items-start relative z-10">
+<div class="w-6 h-6 rounded-full bg-surface-container-high border border-secondary flex items-center justify-center flex-shrink-0 mt-1">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+</div>
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest text-on-primary-container mb-1">Fase 2</h4>
+<p class="text-sm font-headline italic">Identificación de puntos de fricción</p>
+</div>
+</div>
+<div class="flex gap-6 items-start relative z-10">
+<div class="w-6 h-6 rounded-full bg-primary flex border border-outline-variant/30 items-center justify-center flex-shrink-0 mt-1">
+</div>
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest text-on-primary-container/40 mb-1">Fase 3</h4>
+<p class="text-sm font-headline italic opacity-40">Arquitectura del nuevo modelo</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-10">
+<span class="material-symbols-outlined text-secondary text-3xl mb-4" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<blockquote class="font-headline italic text-xl text-primary leading-relaxed mb-8">
+                        "La claridad que obtuve en los primeros 15 minutos superó meses de consultoría tradicional. Erika entiende el lenguaje de la alta dirección."
+                    </blockquote>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden grayscale">
+<img class="w-full h-full object-cover" alt="Retrato de ejecutivo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDARPjx_0wkshFRNWV-yL_L1N5UK_lD9Bb21GGtjUk-5JvqUmCarEBdte_ymGk1lnPJmepe8vV-TKWC1Fm9DQKTp2UJWiSYjLQKroxbVcbKmuPHuza9cg-MtenE_z9_EHsZARIySRCnPOJqa71hsmxvYufa0knPxUNScfRPJbHXArTJl5deXr8lEBNdOatZlNsUYgiZUTScbusSfgPvz1ADca6vtos6KFHEtYAsmuqVeb8wZG5a4-OqT_jmcqwwKEWfY2S5zhAeuLk"/>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-primary font-bold">Marco Vincenzo</p>
+<p class="font-label text-[9px] uppercase tracking-widest text-on-surface-variant">Chief Operations Officer</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-8 mt-32">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover" alt="Oficina ejecutiva minimalista" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4KhmzSNRU7oykRMf4bk1_g_4vp8GedY35mOyigP8EqYVpYX5VlsDmHg8UKS-fOy1iPZcdR9nQccJqmCJF6CHmWKu1UEDZEJme8i_Yk2nLdRQ-daLLpFP3dQJZfAxVccA8grbWrKluMaXXGb4aG93eY8hBWvVNjGysac2WbQ8rosXSBEc07nU1puDdXa_RwlaBR3ahFthZBUMoqoGEE2Ve9ikL6I_Mrx6JpaPdOAMAw9IPL1XSiAavjTksTngrcvsyAeiniFC8l2k"/>
+</div>
+<div class="absolute -bottom-8 -right-8 w-1/2 aspect-square bg-surface p-8 shadow-2xl hidden md:block">
+<img class="w-full h-full object-cover" alt="Papelería y pluma" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9Vq4L1oVhhhLMRlyEIYt91xmwV1CnSV1IHnkUo58Tq2gev-hOKk7ZYkTL3s2c5dRvDvetmFbrxmrfbjsvOpok413LUsmisG9nm8muBHiyvo8ghgl6ikYBnzkJgckd5yAzri5QE-l_yPy9TF5iko8dJo-SogFuELRQ3t8L5mDyjtvIt1Wj1khXB9KkrkKZ7Q4fhcP9N6i2tx4LDLUaCZdm8hFRjncf9Y3ToToj7CPNkhcv03iCTkLWErOluExIhQ0SK210eu_2Ua4"/>
+</div>
+</div>
+<div class="pl-0 md:pl-12">
+<h2 class="font-headline text-4xl text-primary mb-8 leading-tight">Un espacio diseñado para la excelencia.</h2>
+<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                        Nuestra práctica se basa en la intersección de la estrategia ejecutiva y la ética arquitectónica. Cada sesión es un bloque fundamental en la construcción de su legado profesional.
+                    </p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary">shield</span>
+<span class="font-label text-xs uppercase tracking-widest">Privacidad absoluta garantizada</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+<span class="font-label text-xs uppercase tracking-widest">Metodología comprobada en Fortune 500</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#1b3022] dark:bg-[#061b0e] w-full py-20 px-16">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12 max-w-7xl mx-auto">
+<div class="max-w-sm">
+<a href="index.html" class="text-[#7c5730] font-newsreader italic text-3xl mb-6 block hover:opacity-90">Erika Valencia Rivas</a>
+<p class="font-inter text-[0.75rem] uppercase tracking-[0.1em] text-[#d0e9d4] leading-relaxed">
+                    Estrategia de alto impacto para líderes globales que buscan trascender la rentabilidad y construir significado.
+                </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4">
+<h5 class="font-inter text-[0.75rem] uppercase tracking-[0.1em] text-[#7c5730]">Servicios</h5>
+<a class="font-inter text-[0.75rem] uppercase tracking-[0.1em] text-[#fcf9f3]/60 hover:text-[#7c5730] hover:underline underline-offset-8 transition-all" href="programa.html">Estrategia</a>
+<a class="font-inter text-[0.75rem] uppercase tracking-[0.1em] text-[#fcf9f3]/60 hover:text-[#7c5730] hover:underline underline-offset-8 transition-all" href="sobre.html">Ética</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-inter text-[0.75rem] uppercase tracking-[0.1em] text-[#7c5730]">Legal</h5>
+<a class="font-inter text-[0.75rem] uppercase tracking-[0.1em] text-[#fcf9f3]/60 hover:text-[#7c5730] hover:underline underline-offset-8 transition-all" href="#">Privacidad</a>
+<a class="font-inter text-[0.75rem] uppercase tracking-[0.1em] text-[#fcf9f3]/60 hover:text-[#7c5730] hover:underline underline-offset-8 transition-all" href="#">Términos</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-inter text-[0.75rem] uppercase tracking-[0.1em] text-[#7c5730]">Social</h5>
+<a class="font-inter text-[0.75rem] uppercase tracking-[0.1em] text-[#fcf9f3]/60 hover:text-[#7c5730] hover:underline underline-offset-8 transition-all" href="#">LinkedIn</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-[#d0e9d4]/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-inter text-[0.75rem] uppercase tracking-[0.1em] text-[#fcf9f3]/40">
+                © 2026 Erika Valencia Rivas. Todos los derechos reservados.
+            </p>
+<div class="flex gap-8">
+<span class="font-inter text-[0.75rem] uppercase tracking-[0.1em] text-[#fcf9f3]/40">Desde 2018</span>
+<span class="font-inter text-[0.75rem] uppercase tracking-[0.1em] text-[#fcf9f3]/40">Asesoría global</span>
+</div>
+</div>
+</footer>
+</body>
+</html>

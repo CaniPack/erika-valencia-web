@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#0d1a10",
+              "on-primary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed": "#0b2013",
+              "secondary": "#7c5730",
+              "secondary-fixed-dim": "#eebd8e",
+              "surface": "#fcf9f3",
+              "surface-container-high": "#ebe8e2",
+              "error-container": "#ffdad6",
+              "on-background": "#1c1c18",
+              "surface-variant": "#e5e2dc",
+              "on-secondary-fixed": "#2c1600",
+              "on-primary-container": "#819986",
+              "inverse-on-surface": "#f3f0ea",
+              "on-surface-variant": "#434843",
+              "outline-variant": "#c3c8c1",
+              "inverse-primary": "#b4cdb8",
+              "on-tertiary-container": "#889787",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed-variant": "#3c4a3d",
+              "secondary-fixed": "#ffdcbd",
+              "surface-container": "#f0eee8",
+              "surface-dim": "#dcdad4",
+              "primary-container": "#1b3022",
+              "on-secondary-container": "#79542d",
+              "surface-tint": "#4d6453",
+              "on-secondary-fixed-variant": "#61401b",
+              "primary-fixed-dim": "#b4cdb8",
+              "on-secondary": "#ffffff",
+              "on-error-container": "#93000a",
+              "inverse-surface": "#31312d",
+              "primary": "#061b0e",
+              "background": "#fcf9f3",
+              "tertiary-container": "#222f23",
+              "tertiary-fixed": "#d7e7d5",
+              "on-surface": "#1c1c18",
+              "on-error": "#ffffff",
+              "surface-bright": "#fcf9f3",
+              "primary-fixed": "#d0e9d4",
+              "tertiary-fixed-dim": "#bbcbba",
+              "on-tertiary-fixed": "#121e14",
+              "surface-container-highest": "#e5e2dc",
+              "surface-container-low": "#f6f3ed",
+              "error": "#ba1a1a",
+              "secondary-container": "#fdcb9b",
+              "outline": "#737973",
+              "on-primary-fixed-variant": "#364c3c"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"],
+              "newsreader": ["Newsreader", "serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #fcf9f3;
+        color: #1c1c18;
+      }
+      .font-newsreader { font-family: 'Newsreader', serif; }
+      .font-inter { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<header class="fixed top-0 w-full z-50 bg-[#fcf9f3]/80 dark:bg-[#061b0e]/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(28,28,24,0.05)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-full mx-auto gap-4 flex-wrap">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#1b3022] dark:text-[#d0e9d4] md:hidden" role="button" aria-label="Menú">menu</span>
+<a href="index.html" class="font-newsreader font-bold text-[#1b3022] dark:text-[#fcf9f3] tracking-widest uppercase hover:opacity-80">ERIKA VALENCIA RIVAS</a>
+</div>
+<nav class="hidden md:flex gap-8 lg:gap-12 font-inter text-[0.75rem] uppercase tracking-[0.1em] flex-wrap items-center">
+<a class="text-[#1b3022] dark:text-[#ebe8e2] opacity-70 hover:text-[#7c5730] transition-colors duration-300" href="index.html">Inicio</a>
+<a class="text-[#1b3022] dark:text-[#ebe8e2] opacity-70 hover:text-[#7c5730] transition-colors duration-300" href="programa.html">Estrategia Ejecutiva</a>
+<a class="text-[#7c5730] font-semibold" href="sobre.html">Sobre Erika</a>
+<a class="text-[#1b3022] dark:text-[#ebe8e2] opacity-70 hover:text-[#7c5730] transition-colors duration-300" href="agenda.html">Agendar</a>
+</nav>
+<a href="agenda.html" class="hidden md:inline-flex bg-secondary text-on-secondary px-6 py-2 text-[0.75rem] uppercase tracking-widest active:scale-95 transition-transform items-center justify-center">Reservar llamada</a>
+</div>
+</header>
+<main class="pt-32">
+<section class="px-8 md:px-16 mb-24 grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
+<div class="md:col-span-7">
+<span class="label-md text-secondary block mb-6 font-bold tracking-[0.2em] uppercase">Trayectoria y visión</span>
+<h1 class="font-headline text-5xl md:text-7xl leading-[1.1] text-primary tracking-[-0.02em]">
+                    Por qué Erika Valencia Rivas es tu guía en este camino.
+                </h1>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[3/4] overflow-hidden">
+<img alt="Erika Valencia Rivas" class="w-full h-full object-cover" src="images/erika-portrait-2.png"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface-container-low p-8 hidden md:block max-w-[280px]">
+<p class="font-headline italic text-xl text-primary-container leading-relaxed">
+                        "La excelencia no es un acto, es el hábito de cuestionar lo establecido."
+                    </p>
+</div>
+</div>
+</section>
+<section class="bg-primary-container py-32 px-8 md:px-24 text-on-primary">
+<div class="max-w-4xl mx-auto text-center">
+<span class="material-symbols-outlined text-secondary text-5xl mb-8">format_quote</span>
+<h2 class="font-headline text-3xl md:text-5xl italic leading-snug">
+                    Mi transición del liderazgo ejecutivo al coaching no fue un cambio de carrera, fue una evolución del propósito.
+                </h2>
+<div class="mt-12 h-px w-24 bg-secondary mx-auto"></div>
+</div>
+</section>
+<section class="py-24 px-8 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-20">
+<div class="space-y-12">
+<div class="space-y-6">
+<h3 class="font-headline text-2xl text-secondary">Disciplina ejecutiva</h3>
+<p class="text-lg leading-[1.8] text-on-surface/80">
+                        Habiendo navegado entornos corporativos de alta presión durante décadas, entiendo los silencios de la sala de juntas. Mi enfoque no se basa en teorías abstractas, sino en la realidad tangible del rendimiento bajo estrés. Fusiono la disciplina de resultados propia de la alta dirección con una empatía radical que reconoce al ser humano detrás del título.
+                    </p>
+</div>
+<div class="bg-surface-container-high p-12 border-l-4 border-secondary">
+<h3 class="font-headline text-2xl text-primary mb-4">Sabiduría práctica</h3>
+<p class="text-md leading-relaxed opacity-90">
+                        Mi metodología integra las enseñanzas de la psiquiatría humanista de <span class="font-bold">Marian Rojas Estapé</span> y la acción transformadora de <span class="font-bold">Mel Robbins</span>. Creemos en la neurociencia aplicada al liderazgo: entender cómo funciona tu mente para que ella trabaje para ti, no en tu contra.
+                    </p>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square bg-surface-container-low overflow-hidden">
+<img alt="Entorno ejecutivo" class="w-full h-full object-cover opacity-80 mix-blend-multiply" src="images/erika-portrait-1.png"/>
+</div>
+<div class="mt-8">
+<p class="font-label text-xs uppercase tracking-[0.2em] text-secondary font-bold mb-4">Estrategia de vida</p>
+<p class="text-sm italic font-newsreader text-on-surface-variant">
+                        "En el equilibrio entre la métrica y el alma reside el verdadero éxito sostenible."
+                    </p>
+</div>
+</div>
+</section>
+<section class="py-24 px-8 md:px-16 bg-surface-container-low">
+<div class="mb-16">
+<h2 class="font-headline text-4xl text-primary">Filosofía: en lo que creo</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-10 shadow-sm border-t-2 border-secondary">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary">self_improvement</span>
+</div>
+<h4 class="font-headline text-xl mb-4">Liderazgo desde el ser</h4>
+<p class="text-sm leading-relaxed text-on-surface-variant">
+                        El liderazgo auténtico no se ejerce, se emana. Trabajamos desde la identidad profunda para que el impacto externo sea una consecuencia natural de tu coherencia interna.
+                    </p>
+</div>
+<div class="bg-surface-container-lowest p-10 shadow-sm">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary">bolt</span>
+</div>
+<h4 class="font-headline text-xl mb-4">Acción práctica</h4>
+<p class="text-sm leading-relaxed text-on-surface-variant">
+                        Menos contemplación, más ejecución consciente. Cada sesión se traduce en micro-movimientos estratégicos que generan tracción inmediata en tu entorno profesional.
+                    </p>
+</div>
+<div class="bg-surface-container-lowest p-10 shadow-sm border-b-2 border-secondary">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary">auto_graph</span>
+</div>
+<h4 class="font-headline text-xl mb-4">Resultados reales</h4>
+<p class="text-sm leading-relaxed text-on-surface-variant">
+                        Medimos lo que importa. El éxito se refleja en la claridad de tus decisiones, la calidad de tu equipo y la serenidad con la que enfrentas la incertidumbre.
+                    </p>
+</div>
+</div>
+</section>
+<section class="py-32 px-8 md:px-32 text-center max-w-5xl mx-auto">
+<h3 class="font-headline text-3xl md:text-4xl text-primary mb-10">¿Estás listo para evolucionar tu propósito?</h3>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<a href="agenda.html" class="inline-flex justify-center bg-secondary text-on-secondary px-10 py-4 font-label uppercase tracking-widest hover:opacity-90 transition-opacity">Consultar disponibilidad</a>
+<a href="programa.html" class="inline-flex justify-center border border-outline-variant text-primary px-10 py-4 font-label uppercase tracking-widest hover:bg-surface-container-high transition-colors">Explorar programas</a>
+</div>
+</section>
+</main>
+<footer class="bg-[#1b3022] dark:bg-[#061b0e] w-full py-20 px-16 text-[#d0e9d4]">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12 max-w-full">
+<div class="space-y-6">
+<a href="index.html" class="text-[#7c5730] font-newsreader italic text-3xl block hover:opacity-90">Erika Valencia Rivas</a>
+<p class="font-inter text-[0.75rem] uppercase tracking-[0.1em] opacity-60 max-w-xs">
+                    Acompañando la evolución de líderes extraordinarios hacia su impacto más auténtico.
+                </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-16">
+<div class="flex flex-col gap-4">
+<span class="font-inter text-[0.75rem] uppercase tracking-[0.1em] font-bold text-[#7c5730]">Navegación</span>
+<a class="text-[#fcf9f3]/60 hover:text-[#7c5730] underline-offset-8 hover:underline font-inter text-[0.75rem] uppercase tracking-[0.1em]" href="index.html">Inicio</a>
+<a class="text-[#fcf9f3]/60 hover:text-[#7c5730] underline-offset-8 hover:underline font-inter text-[0.75rem] uppercase tracking-[0.1em]" href="programa.html">Programa</a>
+<a class="text-[#fcf9f3]/60 hover:text-[#7c5730] underline-offset-8 hover:underline font-inter text-[0.75rem] uppercase tracking-[0.1em]" href="sobre.html">Sobre Erika</a>
+<a class="text-[#fcf9f3]/60 hover:text-[#7c5730] underline-offset-8 hover:underline font-inter text-[0.75rem] uppercase tracking-[0.1em]" href="agenda.html">Agendar</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-inter text-[0.75rem] uppercase tracking-[0.1em] font-bold text-[#7c5730]">Legal</span>
+<a class="text-[#fcf9f3]/60 hover:text-[#7c5730] underline-offset-8 hover:underline font-inter text-[0.75rem] uppercase tracking-[0.1em]" href="#">Privacidad</a>
+<a class="text-[#fcf9f3]/60 hover:text-[#7c5730] underline-offset-8 hover:underline font-inter text-[0.75rem] uppercase tracking-[0.1em]" href="#">Términos</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-inter text-[0.75rem] uppercase tracking-[0.1em] font-bold text-[#7c5730]">Conectar</span>
+<a class="text-[#fcf9f3]/60 hover:text-[#7c5730] underline-offset-8 hover:underline font-inter text-[0.75rem] uppercase tracking-[0.1em]" href="#">LinkedIn</a>
+<a class="text-[#fcf9f3]/60 hover:text-[#7c5730] underline-offset-8 hover:underline font-inter text-[0.75rem] uppercase tracking-[0.1em]" href="#">Instagram</a>
+</div>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-inter text-[0.75rem] uppercase tracking-[0.1em] opacity-40 text-center md:text-left">© 2026 Erika Valencia Rivas. Todos los derechos reservados.</span>
+<div class="flex gap-8">
+<span class="font-inter text-[0.75rem] uppercase tracking-[0.1em] opacity-40">BCN / MAD / LDN</span>
+</div>
+</div>
+</footer>
+</body>
+</html>
