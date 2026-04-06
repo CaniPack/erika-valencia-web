@@ -102,21 +102,21 @@
 <div class="hidden md:flex gap-6 lg:gap-8 items-center flex-wrap">
 <a class="font-newsreader text-lg uppercase tracking-widest text-[#1b3022] dark:text-[#ebe8e2] opacity-70 hover:text-[#7c5730] transition-colors duration-300" href="index.html">Inicio</a>
 <a class="font-newsreader text-lg uppercase tracking-widest text-[#1b3022] dark:text-[#ebe8e2] opacity-70 hover:text-[#7c5730] transition-colors duration-300" href="programa.html">Estrategia Ejecutiva</a>
-<a class="font-newsreader text-lg uppercase tracking-widest text-[#7c5730] font-semibold" href="agenda.html">Agendar</a>
+<a class="font-newsreader text-lg uppercase tracking-widest text-[#7c5730] font-semibold" href="agenda.html">Contacto</a>
 <a class="font-newsreader text-lg uppercase tracking-widest text-[#1b3022] dark:text-[#ebe8e2] opacity-70 hover:text-[#7c5730] transition-colors duration-300" href="sobre.html">Sobre Erika</a>
-<a class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-label text-[0.75rem] uppercase tracking-[0.1em] active:scale-95 transition-transform text-center" href="agenda.html">Reservar llamada</a>
+<a class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-label text-[0.75rem] uppercase tracking-[0.1em] active:scale-95 transition-transform text-center" href="agenda.html">Contactar</a>
 </div>
 </div>
 </header>
 <main class="pt-32 pb-20">
 <section class="max-w-7xl mx-auto px-8 mb-20">
 <div class="max-w-3xl">
-<span class="font-label text-xs uppercase tracking-[0.2em] text-secondary mb-4 block">Confirmación de sesión</span>
+<span class="font-label text-xs uppercase tracking-[0.2em] text-secondary mb-4 block">Contacto</span>
 <h1 class="font-headline text-5xl md:text-6xl text-primary leading-tight tracking-[-0.02em] mb-6">
-                    ¡Paso completado! Solo falta un último detalle.
+                    Hablemos de tu liderazgo
                 </h1>
 <p class="font-headline italic text-2xl text-on-surface-variant opacity-80">
-                    Reserva de una sesión de claridad de 15 minutos.
+                    Cuéntame en qué punto estás y te respondo lo antes posible.
                 </p>
 </div>
 </section>
@@ -124,50 +124,51 @@
 <div class="lg:col-span-7">
 <div class="bg-surface-container-lowest p-8 md:p-12 shadow-[0_20px_40px_rgba(28,28,24,0.03)] border-l-4 border-secondary">
 <div class="flex items-center justify-between mb-10 flex-wrap gap-4">
-<h2 class="font-headline text-2xl text-primary">Selecciona tu horario</h2>
+<h2 class="font-headline text-2xl text-primary">Envíame un mensaje</h2>
 <div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-sm">schedule</span>
-<span class="font-label text-xs uppercase tracking-widest">15 minutos</span>
+<span class="material-symbols-outlined text-sm">mail</span>
+<span class="font-label text-xs uppercase tracking-widest">Respuesta personal</span>
 </div>
 </div>
-<div class="grid grid-cols-7 gap-2 mb-10">
-<div class="text-center font-label text-[10px] text-outline tracking-widest py-2 uppercase">Lun</div>
-<div class="text-center font-label text-[10px] text-outline tracking-widest py-2 uppercase">Mar</div>
-<div class="text-center font-label text-[10px] text-outline tracking-widest py-2 uppercase">Mié</div>
-<div class="text-center font-label text-[10px] text-outline tracking-widest py-2 uppercase">Jue</div>
-<div class="text-center font-label text-[10px] text-outline tracking-widest py-2 uppercase">Vie</div>
-<div class="text-center font-label text-[10px] text-outline tracking-widest py-2 uppercase">Sáb</div>
-<div class="text-center font-label text-[10px] text-outline tracking-widest py-2 uppercase">Dom</div>
-<div class="aspect-square flex items-center justify-center text-sm opacity-20">28</div>
-<div class="aspect-square flex items-center justify-center text-sm opacity-20">29</div>
-<div class="aspect-square flex items-center justify-center text-sm opacity-20">30</div>
-<button type="button" class="aspect-square flex items-center justify-center text-sm hover:bg-surface-container-high transition-colors rounded-sm">1</button>
-<button type="button" class="aspect-square flex items-center justify-center text-sm bg-secondary text-white font-bold rounded-sm">2</button>
-<button type="button" class="aspect-square flex items-center justify-center text-sm hover:bg-surface-container-high transition-colors rounded-sm">3</button>
-<div class="aspect-square flex items-center justify-center text-sm opacity-20">4</div>
+<form id="contact-form" class="space-y-6" action="https://formsubmit.co/tu-correo@ejemplo.com" method="POST">
+<input type="hidden" name="_subject" value="Nuevo mensaje desde la web — Erika Valencia Rivas"/>
+<input type="hidden" name="_captcha" value="false"/>
+<input type="hidden" name="_template" value="table"/>
+<div>
+<label for="nombre" class="block font-label text-[0.65rem] uppercase tracking-widest text-on-surface-variant mb-2">Nombre completo</label>
+<input id="nombre" name="nombre" type="text" required autocomplete="name" class="w-full rounded-sm border-outline-variant/40 bg-surface px-4 py-3 font-body text-on-surface focus:border-secondary focus:ring-secondary/20"/>
 </div>
-<div class="space-y-4">
-<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-<button type="button" class="py-4 border border-outline-variant/20 font-label text-sm tracking-widest hover:border-secondary transition-colors uppercase rounded-sm">09:00</button>
-<button type="button" class="py-4 border border-secondary bg-secondary text-white font-label text-sm tracking-widest uppercase rounded-sm">10:30</button>
-<button type="button" class="py-4 border border-outline-variant/20 font-label text-sm tracking-widest hover:border-secondary transition-colors uppercase rounded-sm">11:15</button>
-<button type="button" class="py-4 border border-outline-variant/20 font-label text-sm tracking-widest hover:border-secondary transition-colors uppercase rounded-sm">14:00</button>
-<button type="button" class="py-4 border border-outline-variant/20 font-label text-sm tracking-widest hover:border-secondary transition-colors uppercase rounded-sm">15:45</button>
-<button type="button" class="py-4 border border-outline-variant/20 font-label text-sm tracking-widest hover:border-secondary transition-colors uppercase rounded-sm">17:00</button>
+<div>
+<label for="email" class="block font-label text-[0.65rem] uppercase tracking-widest text-on-surface-variant mb-2">Correo electrónico</label>
+<input id="email" name="email" type="email" required autocomplete="email" class="w-full rounded-sm border-outline-variant/40 bg-surface px-4 py-3 font-body text-on-surface focus:border-secondary focus:ring-secondary/20"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label for="telefono" class="block font-label text-[0.65rem] uppercase tracking-widest text-on-surface-variant mb-2">Teléfono <span class="normal-case opacity-60">(opcional)</span></label>
+<input id="telefono" name="telefono" type="tel" autocomplete="tel" class="w-full rounded-sm border-outline-variant/40 bg-surface px-4 py-3 font-body text-on-surface focus:border-secondary focus:ring-secondary/20"/>
+</div>
+<div>
+<label for="empresa" class="block font-label text-[0.65rem] uppercase tracking-widest text-on-surface-variant mb-2">Empresa <span class="normal-case opacity-60">(opcional)</span></label>
+<input id="empresa" name="empresa" type="text" autocomplete="organization" class="w-full rounded-sm border-outline-variant/40 bg-surface px-4 py-3 font-body text-on-surface focus:border-secondary focus:ring-secondary/20"/>
 </div>
 </div>
-<div class="mt-12">
-<button type="button" class="w-full bg-primary-container text-on-primary py-5 font-label text-xs uppercase tracking-[0.2em] hover:bg-primary transition-colors rounded-sm">
-                            Confirmar horario seleccionado
+<div>
+<label for="mensaje" class="block font-label text-[0.65rem] uppercase tracking-widest text-on-surface-variant mb-2">Mensaje</label>
+<textarea id="mensaje" name="mensaje" required rows="5" class="w-full rounded-sm border-outline-variant/40 bg-surface px-4 py-3 font-body text-on-surface focus:border-secondary focus:ring-secondary/20 resize-y min-h-[120px]"></textarea>
+</div>
+<div class="mt-2">
+<button type="submit" class="w-full bg-primary-container text-on-primary py-5 font-label text-xs uppercase tracking-[0.2em] hover:bg-primary transition-colors rounded-sm">
+                            Enviar mensaje
                         </button>
 </div>
+</form>
 </div>
 </div>
 <div class="lg:col-span-5 space-y-12">
 <div class="bg-primary-container p-10 text-on-primary">
 <h3 class="font-headline text-2xl mb-6">Tu hoja de ruta personalizada</h3>
 <p class="font-body text-sm text-on-primary-container leading-relaxed mb-8">
-                        En esta llamada definiremos tu hoja de ruta personalizada. No es una charla genérica; es el inicio de tu transformación estratégica.
+                        Al contactarme damos el primer paso hacia tu hoja de ruta personalizada. No es una charla genérica; es el inicio de tu transformación estratégica.
                     </p>
 <div class="space-y-6 relative">
 <div class="absolute left-3 top-0 bottom-0 w-[1px] bg-secondary opacity-30"></div>
@@ -202,7 +203,7 @@
 <div class="bg-surface-container-low p-10">
 <span class="material-symbols-outlined text-secondary text-3xl mb-4" style="font-variation-settings: 'FILL' 1;">format_quote</span>
 <blockquote class="font-headline italic text-xl text-primary leading-relaxed mb-8">
-                        "La claridad que obtuve en los primeros 15 minutos superó meses de consultoría tradicional. Erika entiende el lenguaje de la alta dirección."
+                        "La claridad que obtuve desde el primer contacto superó meses de consultoría tradicional. Erika entiende el lenguaje de la alta dirección."
                     </blockquote>
 <div class="flex items-center gap-4">
 <div class="w-12 h-12 rounded-full overflow-hidden grayscale">
